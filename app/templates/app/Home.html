@@ -1,0 +1,85 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+    <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'app/media/animacion_cover.webm' %}" type="video/webm" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+
+              
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <div class='console-container'>
+                    <br>
+                    <br>
+                    <span id='text'>
+                        
+                    </span>
+                    <div class='console-underscore' id='console'>&#95;
+                    </div>
+    </div>
+    <main>
+         
+        <div class="container__banner">
+
+            <div class="banner">
+                <div class="banner__icon-heart">
+                    <img src="{% static 'app/media/heart_notify.png' %}" id="icon_heart" alt="">
+                </div>
+                <div class="banner__icon-fire">
+                    <img src="{% static 'app/media/fire-dynamic-color.png' %}" id="icon_fire" alt="">
+                </div>
+                <div class="banner__text">
+                    <h2>Mat 4:1 Entonces Jesús fue llevado por el Espíritu al desierto, para ser tentado por el diablo.</h2>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-all">
+        <div class="content-img" id="img1">
+            <a href="#img5" class="icon-left-open"></a>
+            <img src="{% static 'app/media/1.jpg' %}">
+            <a href="#img2" class="icon-right-open"></a>
+        </div>
+        <div class="content-img" id="img2">
+            <a href="#img1" class="icon-left-open"></a>
+            <img src="{% static 'app/media/2.jpg' %}">
+            <a href="#img3" class="icon-right-open"></a>
+            <div class="content-details">
+                <h3>MUJER FUE RESTAURADA POR JESUS LUEGO DE SER VIOLADA</h3>
+                <p>Suscribete a mi canal para que estes bien informado de todo el contenido que se sube a este canal...</p>
+                <input type="button" value="VER NOTICIA" ><br><br>
+                <h3>NOTICIAS CRISTIANAS</h3>
+            </div>
+        </div>
+        <div class="content-img" id="img3">
+            <a href="#img2" class="icon-left-open"></a>
+            <img src="{% static 'app/media/3.jpg' %}">
+            <a href="#img4" class="icon-right-open"></a>
+        </div>
+        <div class="content-img" id="img4">
+            <a href="#img3" class="icon-left-open"></a>
+            <img src="{% static 'app/media/4.jpg' %}">
+            <a href="#img5" class="icon-right-open"></a>
+        </div>
+        <div class="content-img" id="img5">
+            <a href="#img4" class="icon-left-open"></a>
+            <img src="{% static 'app/media/5.jpg' %}">
+            <a href="#img1" class="icon-right-open"></a>
+        </div>
+    </div>
+    {% endblock %}
+    </main>
+  
+    
